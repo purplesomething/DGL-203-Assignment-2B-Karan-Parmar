@@ -234,6 +234,7 @@ nav::after {
 
 nav ul {
   list-style-type: none;
+
 }
 
 nav ul li a {
@@ -269,6 +270,7 @@ nav .btn {
   text-shadow: 0 0 1px rgb(19, 177, 231);
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 nav .btn:hover {
@@ -821,7 +823,7 @@ form#contactForm {
   }
 
   /* ######### 10a-ii. Navigation, Large screen rules ######### */
-  .navWrap {
+  .navWrap { display: grid; justify-content: center; grid-template-columns: 100px minmax(auto, 1100px); height: auto;
   }
 
   .navToggleLabel {
@@ -832,7 +834,7 @@ form#contactForm {
     position: initial;
   }
 
-  nav ul {
+  nav ul { display: flex; justify-content: flex-end; align-items: center;
   }
 
   nav ul li a {
