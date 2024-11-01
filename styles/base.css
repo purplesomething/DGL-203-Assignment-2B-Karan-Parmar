@@ -623,6 +623,9 @@ form#contactForm {
   padding: 0.5rem;
   min-width: 200px;
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactForm button:hover {
@@ -690,10 +693,14 @@ input[type="checkbox"]:checked ~ span:before {
 .contactForm div.radioBtns {
   margin: 1em 0;
   max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .radioBtns p {
   padding-bottom: 0;
+  grid-column: span 3;
 }
 
 input[type="radio"]:first-of-type {
