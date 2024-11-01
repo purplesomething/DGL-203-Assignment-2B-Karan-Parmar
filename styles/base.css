@@ -945,6 +945,9 @@ form#contactForm {
   section.problem {
     background: url(../images/problem1.png) no-repeat center left;
     max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
   }
 
   .problem h1 {
@@ -952,11 +955,12 @@ form#contactForm {
     padding-right: 1rem;
     text-align: right;
     text-shadow: 1px 1px 2px #fff;
+    grid-column: 1 / 5;
   }
 
   .problem h1 ~ p,
   .problem h3,
-  .problem ul {
+  .problem ul { grid-column: 5 / -1;
   }
 
   .problem ul {
