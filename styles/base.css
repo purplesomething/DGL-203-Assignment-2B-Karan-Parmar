@@ -552,16 +552,16 @@ section.problem {
   margin-bottom: 0.5rem;
 }
 
-.galleryWrap {
+.galleryWrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 5em; grid-auto-flow: row dense;
 }
 
-.galleryWrap img[src$="_w.jpg"] {
+.galleryWrap img[src$="_w.jpg"] { grid-column-end: span 2;
 }
 
-.galleryWrap img[src$="_p.jpg"] {
+.galleryWrap img[src$="_p.jpg"] { grid-row-end: span 2;
 }
 
-.galleryWrap img {
+.galleryWrap img { width: 100%; height: 100%; object-fit: cover;
 }
 
 /* ######### 9. Footer ######### */
