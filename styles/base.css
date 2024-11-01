@@ -735,33 +735,49 @@ input[type="radio"]:checked ~ span:before {
 /*  ########### NEW CODE START (05_03) ########### */
 form#contactForm {
   max-width: initial;
+  grid-area: f;
+  display: grid;
+  grid-template-areas: "name ph"
+                       "email news"
+                       "radio radio"
+                       "msg msg"
+                       "btn .";
+                       grid-gap: 1rem;
+  
 }
 
 .contactForm div {
   margin-top: 0;
 }
 
-.contactForm div:nth-child(1) {
+.contactForm div:nth-child(1) { grid-area: name;
 }
 
-.contactForm div:nth-child(2) {
+.contactForm div:nth-child(2) { grid-area: ph;
+}
 }
 
-.contactForm div:nth-child(3) {
+.contactForm div:nth-child(3) { grid-area: email;
+}
 }
 
-.contactForm div:nth-child(4) {
+.contactForm div:nth-child(4) { grid-area: radio;
+}
 }
 
-.contactForm div:nth-child(5) {
+.contactForm div:nth-child(5) { grid-area: msg;
+}
 }
 
-.contactForm div:nth-child(6) {
+.contactForm div:nth-child(6) { grid-area: news;
+}
   margin: 1.8rem 0 0;
 }
 
-.contactForm button {
+.contactForm button { 
   width: 100%;
+  grid-area: btn;
+}
 }
 
 .contactForm textarea {
@@ -1055,7 +1071,8 @@ form#contactForm {
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
   .form { display: grid; grid-template-columns: auto minmax(min-content, 580px); grid-template-areas: ". h"
-                                                                                                      ". p" 
+                                                                                                      ". p"
+                                                                                                      ". f" 
   }
 
   .form h3 {
