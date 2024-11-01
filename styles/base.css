@@ -267,6 +267,8 @@ nav .btn {
   padding: 0.25rem 0.6rem;
   letter-spacing: 1px;
   text-shadow: 0 0 1px rgb(19, 177, 231);
+  display: flex;
+  justify-content: center;
 }
 
 nav .btn:hover {
