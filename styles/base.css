@@ -1008,7 +1008,7 @@ form#contactForm {
 
 
   /* ######### 10a-viii. Footer, Large screen rules ######### */
-  footer {
+  footer { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr .25fr;
   }
 
   .contact {
@@ -1022,6 +1022,9 @@ form#contactForm {
 
   .social article {
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    align-items: center;
   }
 
   .socialIcons {
@@ -1038,6 +1041,7 @@ form#contactForm {
     background-color: #b6e8ff;
     color: #233156;
     padding: 1rem 0 0;
+    grid-column: 1 / -1;
   }
 }
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
