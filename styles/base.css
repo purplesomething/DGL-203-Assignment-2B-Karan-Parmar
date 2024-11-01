@@ -339,6 +339,9 @@ nav .btn:hover {
   height: 2rem;
   margin-top: 1rem;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .trips a:hover {
@@ -870,7 +873,7 @@ form#contactForm {
   }
 
   /* ######### 10a-iiI. Trips, Large screen rules ######### */
-  .tripList {
+  .tripList {grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .trips article {
