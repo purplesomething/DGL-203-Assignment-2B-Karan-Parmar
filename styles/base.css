@@ -1047,7 +1047,8 @@ form#contactForm {
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
-  .form {
+  .form { display: grid; grid-template-columns: auto minmax(min-content, 580px); grid-template-areas: ". h"
+                                                                                                      ". p" 
   }
 
   .form h3 {
@@ -1058,6 +1059,9 @@ form#contactForm {
 
   .social article {
     max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .socialIcons {
