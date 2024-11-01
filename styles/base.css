@@ -120,7 +120,8 @@ i {
   grid-row: 1 / 2;
 }
 
-.hero article {
+.hero article {grid-column: 2 / 3 ;
+  grid-row: 2 / 3;
 }
 
 .hero h1 {
@@ -799,6 +800,8 @@ form#contactForm {
     background: url(../images/header1_lg.jpg) no-repeat center left;
     background-size: cover;
     text-align: left;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: .25fr 1fr .25fr;
   }
 
   .hero img {
