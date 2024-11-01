@@ -921,17 +921,24 @@ form#contactForm {
     max-width: 1000px;
     margin: auto;
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: repeat(2, auto);
   }
 
-  .team h1 {
+  .team h1 { order: 2; grid-column: 2 / -1; align-self: center;
   }
 
-  .teamMembers {
+  .teamMembers { order: 1; grid-column: 1 / -1;
   }
 
   .team p {
     border-right: solid 1px #dedede;
     padding-right: 1rem;
+    order: 2;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
   }
 
   /* ######### 10a-vi. Problem, Large screen rules ######### */
